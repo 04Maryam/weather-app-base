@@ -32,7 +32,250 @@
     animation: logo-spin infinite 20s linear;
   }
 }
+form {
+  display: flex;
+  /* flex-direction: column; */
+  gap: 0.6em;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+input {
+  padding: 0.5em;
+  border-radius: 8px;
+  border: 1px solid #582e7d;
+  font-size: 1em;
+  /* font-family: inherit; */
+}
+
+
+/* weather */
+
+.weather-info {
+  
+}
+
+i {
+  font-size: 1.5em;
+}
+
+.weather-icon {
+  padding-top: 10px;
+  padding-bottom: 0px;
+}
+
+.weather-header {
+  max-width: 110px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.city-name {
+  font-size: 2em;
+  font-weight: 400;
+  margin-bottom: 0px;
+}
+
+.temp {
+  font-size: 4.5em;
+  font-weight: lighter;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  /* font-weight: bold; */
+}
+
+.weather-desc {
+  font-size: 0.8em;
+  /* font-weight: bold; */
+  text-transform: capitalize;
+  color: gray;
+  margin-top: 0px;
+}
+
+.temp-range {
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+}
+
+
+.flex-cards {
+  display: flex;
+  gap: 20px;
+  padding-bottom: 20px;
+  margin: 0 auto;
+  /* margin-top: 0px; */
+  /* flex-wrap: wrap; */
+}
 
 .card {
-  padding: 2em;
+  /* flex: 1 1 200px; */
+  flex: 1 1 160px;
+  width: 160px;
+  height: 160px;
+  /* background-color: #ffffff; */
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  transition: box-shadow 0.3s ease;
+  text-align: start;
+}
+
+.cards {
+  display: flex;
+  gap: 20px;
+  padding-bottom: 20px;
+}
+
+.card2 {
+  /* flex: 1 1 200px; */
+  margin: 0 auto;
+  width: 380px;
+  height: 210px;
+  /* background-color: #ffffff; */
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  transition: box-shadow 0.3s ease;
+  text-align: start;
+}
+
+.bottom-border {
+  border-bottom: 1px solid #666;
+}
+
+.card-title {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.card-desc {
+  font-size: 19px;
+  font-weight: 600;
+}
+
+.card2-desc {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.desc {
+  display: flex;
+  justify-content: space-between;
+}
+
+.desc-details {
+  color: #666;
+}
+
+.averages {
+  font-size: 14px;
+  color: #666;
+  margin-top: 8px;
+}
+
+
+.humidity-icon {
+  position: relative;
+  padding-right: 20px;
+}
+
+.humidity-icon .bi-wind {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.humidity-icon .bi-droplet-fill {
+  position: absolute;
+  left: 10px;
+  top: 5px;
+}
+
+.card3 {
+  margin: 0 auto;
+  width: 380px;
+  height: 200px;
+  /* background-color: #ffffff; */
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding-right: 20px;
+  padding-left: 20px;
+  /* padding-bottom: 20px; */
+  padding-top: 3px;
+  margin-bottom: 20px;
+  transition: box-shadow 0.3s ease;
+  text-align: start;
+}
+
+.hourly-scroll-container {
+  display: flex;
+  overflow-x: auto;     /* enables horizontal scroll */
+  overflow-y: hidden;   /* disables vertical scroll */
+  padding: 0.5rem 0;
+  gap: 1rem;
+  scroll-snap-type: x mandatory; /* optional: smooth snap scroll */
+}
+
+.hourly-scroll-container::-webkit-scrollbar {
+  height: 6px;
+}
+
+.hourly-scroll-container::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.hourly-scroll-container::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.hourly-card {
+  min-width: 60px;
+  text-align: center;
+  /* padding: 0.5rem; */
+  border-radius: 8px;
+  scroll-snap-align: start; /* optional: snap behavior */
+}
+
+.daily-card {
+  display: flex;
+  justify-content: space-between;
+  min-width: 60px;
+  text-align: center;
+  /* padding: 0.5rem; */
+  border-radius: 8px;
+  scroll-snap-align: start; /* optional: snap behavior */
+}
+
+.card4 {
+  margin: 0 auto;
+  width: 380px;
+  height: 280px;
+  /* background-color: #ffffff; */
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin-bottom: 20px;
+  transition: box-shadow 0.3s ease;
+  text-align: start;
+}
+
+.day {
+  display: flex;
+  /* gap: 50px; */
+  justify-content: space-between;
+  width:30%
 }
